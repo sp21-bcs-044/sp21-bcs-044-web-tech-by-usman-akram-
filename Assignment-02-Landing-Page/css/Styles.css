@@ -63,12 +63,14 @@ display: flex;
 
 .column {
     float: left;
-    width: 33.33%;
-    column-gap:20px;
-    border:0.2px solid black;
-    border-radius: 5%;
-    margin: 5px;
-    padding:5px;
+    width: 30.33%;
+    border: 1px solid black ;
+    column-gap:20px; 
+    border-radius: 2%;
+    margin: 4px;
+    padding: 2px;
+  
+  
  
   }
 
@@ -97,8 +99,8 @@ display: flex;
 .semi{
 
 
-    height:400px;
-    width:400px;
+    height:500px;
+    width:600px;
     list-style: none;
     display: flex;
     padding:10px;
