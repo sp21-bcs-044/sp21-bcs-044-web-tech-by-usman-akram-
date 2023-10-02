@@ -36,10 +36,10 @@
         background-color: yellow;
     }
     
-    .image-text{
+    /* .image-text{
     
         position: absolute;
-        top: 50%; 
+        top: 40%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
         background-color: yellow ; 
@@ -47,7 +47,7 @@
         padding: 10px 20px; 
         font-size: 20px; 
         text-align: center;
-    }
+    } */
     
     .center-text{
     
@@ -68,7 +68,7 @@
     .image-text{
 
         position: absolute;
-        top: 85%; 
+        top: 80%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
         background-color: transparent ; 
