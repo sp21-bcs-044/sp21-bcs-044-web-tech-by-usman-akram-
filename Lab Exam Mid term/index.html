@@ -1,494 +1,493 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Institute of Space Technology</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-    </head>
-    <body>
-        <style>
-            .bg-color-main{
-                background-color: #55A79A !important;
-                padding: 5px 0;
-            }
-            .bg-color-main ul{
-                list-style: none;
-                max-width: 80%;
-                margin: auto;
-                padding: 5px 0;
-            }
-            .bg-color-main ul{
-                justify-content: space-between;
-            }
-            .bg-color-main ul li{
-                font-size: 22px;
-                font-weight: 600;
-                transition: all .3s;
-            }
-            .bg-color-main ul li:hover{
-                border-bottom: 3px solid #fff;
-            }
-            .hero-banner{
-                background-image: url(ele1.png);
-                background-size: cover;
-                padding: 15px 0;
-            }
-            .hero-banner img{
-                width: 100%;
-            }
-            .main-column{
-                border: 1px solid #17a2b8 !important;
-                width: 30%;
-                padding: 10px 15px;
-                text-align: center;
-                margin: 0 10px;
-            }
-            .main-column h2{
-                font-weight: 600;
-                font-size: 30px;
-            }
-            .main-column-container{
-                max-width: 1500px;
-                margin: auto;
-                padding: 40px 20px;
-            }
-            .main-column p{
-                font-size: 20px;
-            }
-            .main-column a{
-                font-size: 16px;
-                background-color: #17a2b8;
-                width: 100%;
-                color: #fff;
-                display: block;
-                text-align: center;
-                border-radius: 999px;
-                font-family: sans-serif;
-                font-weight: 600;
-                padding: 5px 0;
-            }
-            .cols-ionic-row{
-                row-gap: 10px;
-            }
-            .main-info-img{
-                width: 20%;
-                object-fit: cover;
-            }
-            .main-container-img{
-                margin: 0 !important;
-            }
-            .main-row-info{
-                margin: 0;
-                padding: 40px 10px;
-                column-gap: 20px;
-            }
-            .mini-banner-img{
-                width: 100%;
-            }
-            .main-product-column{
-                width: 19%;
-                border-top: 1px solid #E6E6E6;
-                border-left: 1px solid #E6E6E6;
-                border-right: 1px solid #E6E6E6;
-                border-bottom: 3px solid #55a79a;
-                padding: 20px;
-            }
-            .main-column-info-img{
-                width: 100%;
-            }
-            .main-cols-img-row{
-                margin: 0;
-                column-gap: 10px;
-                justify-content: center;
-            }
-            .main-products-container{
-                padding: 40px 0;
-            }
-            .main-product-column span:first-child{
-                background-color: #55A79A;
-            }
-            .main-product-column span:last-child{
-                background-color: #E6E6E6;
-            }
-            .main-product-column a{
-                color: #55a79a;
-            }
-            @media screen and (max-width: 749px) {
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Institute of Space Technology</title>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+        </head>
+        <body>
+            <style>
+                .bg-color-main{
+                    background-color: #55A79A !important;
+                    padding: 5px 0;
+                }
+                .bg-color-main ul{
+                    list-style: none;
+                    max-width: 80%;
+                    margin: auto;
+                    padding: 5px 0;
+                }
+                .bg-color-main ul{
+                    justify-content: space-between;
+                }
                 .bg-color-main ul li{
-                    font-size: 16px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    transition: all .3s;
                 }
-                .hero-banner h2{
-                    text-align: center;
+                .bg-color-main ul li:hover{
+                    border-bottom: 3px solid #fff;
                 }
-                .text-row-info{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                .hero-banner{
+                    background-image: url(ele1.png);
+                    background-size: cover;
+                    padding: 15px 0;
                 }
-                .main-column{
+                .hero-banner img{
                     width: 100%;
                 }
+                .main-column{
+                    border: 1px solid #17a2b8 !important;
+                    width: 30%;
+                    padding: 10px 15px;
+                    text-align: center;
+                    margin: 0 10px;
+                }
                 .main-column h2{
-                    font-size: 20px;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+                .main-column-container{
+                    max-width: 1500px;
+                    margin: auto;
+                    padding: 40px 20px;
                 }
                 .main-column p{
-                    font-size: 16px;
+                    font-size: 20px;
                 }
-                .main-container-img{
-                    flex-direction: column;
+                .main-column a{
+                    font-size: 16px;
+                    background-color: #17a2b8;
+                    width: 100%;
+                    color: #fff;
+                    display: block;
+                    text-align: center;
+                    border-radius: 999px;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    padding: 5px 0;
+                }
+                .cols-ionic-row{
                     row-gap: 10px;
                 }
                 .main-info-img{
+                    width: 20%;
+                    object-fit: cover;
+                }
+                .main-container-img{
+                    margin: 0 !important;
+                }
+                .main-row-info{
+                    margin: 0;
+                    padding: 40px 10px;
+                    column-gap: 20px;
+                }
+                .mini-banner-img{
                     width: 100%;
                 }
-                .mini-banner-column{
-                    text-align: center;
-                }
                 .main-product-column{
-                    text-align: center;
+                    width: 19%;
+                    border-top: 1px solid #E6E6E6;
+                    border-left: 1px solid #E6E6E6;
+                    border-right: 1px solid #E6E6E6;
+                    border-bottom: 3px solid #55a79a;
+                    padding: 20px;
+                }
+                .main-column-info-img{
+                    width: 100%;
                 }
                 .main-cols-img-row{
-                    flex-direction: column;
+                    margin: 0;
+                    column-gap: 10px;
+                    justify-content: center;
                 }
-                .main-product-column{
-                    width: 100%;
-                    row-gap: 20px;
+                .main-products-container{
+                    padding: 40px 0;
                 }
-            }
-        </style>
-        <nav class="bg-color-main">
-            <ul class="d-flex">
-                <li class="text-white">
-                    Home
-                </li>
-                <li class="text-white">
-                    About
-                </li>
-                <li class="text-white">
-                    Product
-                </li>
-                <li class="text-white">
-                    Content
-                </li>
-            </ul>
-        </nav>
-        <div class="hero-banner">
-            <div class="slide-content container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-7">
-                        <img src="ele.png" alt="">
-                    </div>
-                    <div class="col-md-5 caption text-row-info">
-                        <h2 style="visibility: visible;" class="animated slider-text">
-                            <span style="font-weight: bold; text-shadow: #55a79a 3px 3px 0px, #55a79a -1px -1px 0px, #55a79a 1px -1px 0px, #55a79a -1px 1px 0px, #55a79a 1px 1px 0px; color: #ffffff;">Electrical & Avionics Engineering</span>
-                        </h2>
-                        <a href="#" class="btn btn-lg btn-primary de-06 animated slider-button" style="visibility: visible;">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-column-container">
-            <div class="row justify-content-center cols-ionic-row">
-                <div class="main-column">
-                    <h2>
-                        Scholarships for Foreign Students
-                    </h2>
-                    <p>
-                        Al Khwarizmi Scholarships
-                    </p>
-                    <a href="">
-                        MORE DETAILS
-                    </a>
-                </div>
-                <div class="main-column">
-                    <h2>
-                        Scholarships for Foreign Students
-                    </h2>
-                    <p>
-                        Al Khwarizmi Scholarships
-                    </p>
-                    <a href="">
-                        MORE DETAILS
-                    </a>
-                </div>
-                <div class="main-column">
-                    <h2>
-                        Scholarships for Foreign Students
-                    </h2>
-                    <p>
-                        Al Khwarizmi Scholarships
-                    </p>
-                    <a href="">
-                        MORE DETAILS
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main-container-img row">
-            <img class="main-info-img" src="lib.png" alt="">
-            <img class="main-info-img" src="customer-2111.png" alt="">
-            <img class="main-info-img" src="wellness-t.png" alt="">
-            <img class="main-info-img" src="customer-8.png" alt="">
-            <img class="main-info-img" src="h.png" alt="">
-        </div>
-        <div class="img-with-text">
-            <div class="main-row-info row justify-content-center align-items-center">
-                <div class="mini-banner-column">
-                    <img class="mini-banner-img" src="for_20web.png" alt="">
-                </div>
-                <div class="mini-banner-column">
-                    <h2 data-animate-in="bounceInRight" style="visibility: visible;" class="animated">
-                        <span style="font-weight: bold; text-shadow: #0b60a2 3px 3px 0px, #0b60a2 -1px -1px 0px, #0b60a2 1px -1px 0px, #55a79a -1px 1px 0px, #0b60a2 1px 1px 0px; color: #ffffff;">
-                            Welcome to <br>
-                            Institute of Space Technology, Islamabad
-                        </span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="main-products-container">
-            <div class="main-cols-img-row row">
-                <div class="main-product-column">
-                    <img class="main-column-info-img" src="ncfa.png" alt="">
-                    <div class="mt-4">
-                        <div class="date-wrapper date-wrapper-horizontal">
-                            <span class="date-m">December</span>
-                            <span class="date-d">14</span>
-                        </div>
-                        <h6 style="height: 33px">
-                            <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="main-product-column">
-                    <img class="main-column-info-img" src="Professional-software-world.png" alt="">
-                    <div class="mt-4">
-                        <div class="date-wrapper date-wrapper-horizontal">
-                            <span class="date-m">December</span>
-                            <span class="date-d">14</span>
-                        </div>
-                        <h6 style="height: 33px">
-                            <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="main-product-column">
-                    <img class="main-column-info-img" src="7.png" alt="">
-                    <div class="mt-4">
-                        <div class="date-wrapper date-wrapper-horizontal">
-                            <span class="date-m">December</span>
-                            <span class="date-d">14</span>
-                        </div>
-                        <h6 style="height: 33px">
-                            <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="main-product-column">
-                    <img class="main-column-info-img" src="9.png" alt="">
-                    <div class="mt-4">
-                        <div class="date-wrapper date-wrapper-horizontal">
-                            <span class="date-m">December</span>
-                            <span class="date-d">14</span>
-                        </div>
-                        <h6 style="height: 33px">
-                            <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="main-product-column">
-                    <img class="main-column-info-img" src="22.png" alt="">
-                    <div class="mt-4">
-                        <div class="date-wrapper date-wrapper-horizontal">
-                            <span class="date-m">December</span>
-                            <span class="date-d">14</span>
-                        </div>
-                        <h6 style="height: 33px">
-                            <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <section>
-            <div class="container text-center">
-                <div class="border-bottom"> </div>
-        
-            <h3 class="py-5">Resources for Students and Faculty
-            </h3>
-        
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="./bell.png" class="img-fluid" alt="">
-                    <a href="#"> <h5>Important Alerts</h5> 
-                    <p class="text-black-50">Important alerts related to covid-19 shutdown</p>
-                </a>
-                    </div>
-        
-        
-        
-                <div class="col-md-4">
-                    <img src="./form.png" class="img-fluid" alt="">
-                    <a href="#">
-                        <h5>Covid 19 report form</h5>
-                        <p class="text-black-50">Many students/employee is caught with corona virus, please fill this form</p>
-                    </a>
-                </div>
-                <div class="col-md-4"><img src="./form.png" class="img-fluid" alt="">
-                    <a href="#">
-                        <h5>Drugs Awareness Campaign</h5>
-                        <p class="text-black-50">Many students/employee is caught with corona virus, please fill this form</p>
-                    </a></div>
-            </div>
-        
-        </div>
-        </section>
-
-        <footer>
-            <div class="container mt-5 ">
-                <div class="row no-gutters">
-                    <div class="col-lg-12">
-                        <a href="#">
-                            <img src="./Images/fv.png" class="img-fluid" alt="">
-                        </a> <a href="#">
-                            <img src="./Images/tw.png" class="img-fluid" alt="">
-                        </a> <a href="#">
-                            <img src="./Images/ins.png" class="img-fluid" alt="">
-                        </a> <a href="#">
-                            <img src="./Images/linkedin.png" class="img-fluid" alt="">
-                        </a>
-                    </a> <a href="#">
-                        <img src="./Images/youtube.png" class="img-fluid" alt="">
-                    </a>
-        
-                    </div>
-                </div>
-                <div class="row"></div>
-        
-        <div class="row mt-5">
-            <div class="col-lg-4">
-                <img src="./ist.png" class="img-fluid" alt="">
-                <h5>Istitue of space technology</h5>
-                <h6>An ISO 9001:2015 Certfied institute</h6>
-                <ul class="list-unstyled">
-                    <li> <img src="./ph.png" class="img-fluid" alt="">
-                    <h6> +92-51-9075100
-                    </h6> </li>
-                    <li> <img src="./tel.png" class="img-fluid" alt="">
-                        <h6>+92-51-9273310
-                        </h6> </li>
-                        <li> <img src="./mail.png" class="img-fluid" alt="">
-                            <h6> info@ist.edu.pk
-                            </h6> </li>
-        
-                            <li> <img src="./home.png" class="img-fluid" alt="">
-                                <h6> 1, Islamabad Expressway, Islamabad
-                                </h6> </li>
-        
-                                <li> <img src="./loc.png" class="img-fluid" alt="">
-                                    <h6>  G59H+P2 Islamabad
-                                    </h6> </li>
+                .main-product-column span:first-child{
+                    background-color: #55A79A;
+                }
+                .main-product-column span:last-child{
+                    background-color: #E6E6E6;
+                }
+                .main-product-column a{
+                    color: #55a79a;
+                }
+                @media screen and (max-width: 749px) {
+                    .bg-color-main ul li{
+                        font-size: 16px;
+                    }
+                    .hero-banner h2{
+                        text-align: center;
+                    }
+                    .text-row-info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .main-column{
+                        width: 100%;
+                    }
+                    .main-column h2{
+                        font-size: 20px;
+                    }
+                    .main-column p{
+                        font-size: 16px;
+                    }
+                    .main-container-img{
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                    .main-info-img{
+                        width: 100%;
+                    }
+                    .mini-banner-column{
+                        text-align: center;
+                    }
+                    .main-product-column{
+                        text-align: center;
+                    }
+                    .main-cols-img-row{
+                        flex-direction: column;
+                    }
+                    .main-product-column{
+                        width: 100%;
+                        row-gap: 20px;
+                    }
+                }
+            </style>
+            <nav class="bg-color-main">
+                <ul class="d-flex">
+                    <li class="text-white">
+                        Home
+                    </li>
+                    <li class="text-white">
+                        About
+                    </li>
+                    <li class="text-white">
+                        Product
+                    </li>
+                    <li class="text-white">
+                        Content
+                    </li>
                 </ul>
-            </div>
-            <div class="col-lg-8">
+            </nav>
+            <section>
+            <div class="hero-banner">
+                <div class="slide-content container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-7">
+                            <img src="ele.png" alt="">
+                        </div>
+                        <div class="col-md-5 caption text-row-info">
+                            <h2 style="visibility: visible;" class="animated slider-text">
+                                <span style="font-weight: bold; text-shadow: #55a79a 3px 3px 0px, #55a79a -1px -1px 0px, #55a79a 1px -1px 0px, #55a79a -1px 1px 0px, #55a79a 1px 1px 0px; color: #ffffff;">Electrical & Avionics Engineering</span>
+                            </h2>
+                            <a href="#" class="btn btn-lg btn-primary de-06 animated slider-button" style="visibility: visible;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div></section>
+        
+        <section>  <div class="main-column-container">
+                <div class="row justify-content-center cols-ionic-row">
+                    <div class="main-column">
+                        <h2>
+                            Scholarships for Foreign Students
+                        </h2>
+                        <p>
+                            Al Khwarizmi Scholarships
+                        </p>
+                        <a href="">
+                            MORE DETAILS
+                        </a>
+                    </div>
+                    <div class="main-column">
+                        <h2>
+                          Undergraduate Admission - Fall 2023
+
+                        </h2>
+                       
+                        <a href="">
+                            Check admission status now 
+                        </a>
+                    </div>
+                    <div class="main-column">
+                        <h2>
+                            Graduate Admission Alert - Fall 2023
+                        </h2>
+                
+                        <a href="">
+                            Check admission status now 
+                        </a>
+                    </div>
+                </div>
+            </div></section>
+    <section>     <div class="main-container-img row">
+                <img class="main-info-img" src="lib.png" alt="">
+                <img class="main-info-img" src="customer-2111.png" alt="">
+                <img class="main-info-img" src="wellness-t.png" alt="">
+                <img class="main-info-img" src="customer-8.png" alt="">
+                <img class="main-info-img" src="h.png" alt="">
+            </div> </section>
+        <section>  <div class="img-with-text">
+                <div class="main-row-info row justify-content-center align-items-center">
+                    <div class="mini-banner-column">
+                        <img class="mini-banner-img" src="for_20web.png" alt="">
+                    </div>
+                    <div class="mini-banner-column">
+                        <h2 data-animate-in="bounceInRight" style="visibility: visible;" class="animated">
+                            <span style="font-weight: bold; text-shadow: #0b60a2 3px 3px 0px, #0b60a2 -1px -1px 0px, #0b60a2 1px -1px 0px, #55a79a -1px 1px 0px, #0b60a2 1px 1px 0px; color: #ffffff;">
+                                Welcome to <br>
+                                Institute of Space Technology, Islamabad
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div></section>
+    <section></section>    <div class="main-products-container">
+                <div class="main-cols-img-row row">
+                    <div class="main-product-column">
+                        <img class="main-column-info-img" src="ncfa.png" alt="">
+                        <div class="mt-4">
+                            <div class="date-wrapper date-wrapper-horizontal">
+                                <span class="date-m">December</span>
+                                <span class="date-d">14</span>
+                            </div>
+                            <h6 style="height: 33px">
+                                <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="main-product-column">
+                        <img class="main-column-info-img" src="Professional-software-world.png" alt="">
+                        <div class="mt-4">
+                            <div class="date-wrapper date-wrapper-horizontal">
+                                <span class="date-m">December</span>
+                                <span class="date-d">14</span>
+                            </div>
+                            <h6 style="height: 33px">
+                                <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="main-product-column">
+                        <img class="main-column-info-img" src="7.png" alt="">
+                        <div class="mt-4">
+                            <div class="date-wrapper date-wrapper-horizontal">
+                                <span class="date-m">December</span>
+                                <span class="date-d">14</span>
+                            </div>
+                            <h6 style="height: 33px">
+                                <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="main-product-column">
+                        <img class="main-column-info-img" src="9.png" alt="">
+                        <div class="mt-4">
+                            <div class="date-wrapper date-wrapper-horizontal">
+                                <span class="date-m">December</span>
+                                <span class="date-d">14</span>
+                            </div>
+                            <h6 style="height: 33px">
+                                <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="main-product-column">
+                        <img class="main-column-info-img" src="22.png" alt="">
+                        <div class="mt-4">
+                            <div class="date-wrapper date-wrapper-horizontal">
+                                <span class="date-m">December</span>
+                                <span class="date-d">14</span>
+                            </div>
+                            <h6 style="height: 33px">
+                                <a href="/events-2022-tedx">TEDx at Institute of Space Technology</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div></section>
+
+
+            <section>
+                <div class="container text-center">
+                    <div class="border-bottom"> </div>
+            
+                <h3 class="py-5">Resources for Students and Faculty
+                </h3>
+            
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Admissions</h3>
-                    <ul class="list-unstyled">
-                        <li> <a href="#">
-                            <p>Why IST</p>
-                        </a></li> <li> <a href="#">
-                            <p>Undergraduate</p>
-                        </a></li> <li> <a href="#">
-                            <p>Graduate</p>
-                        </a></li> <li> <a href="#">
-                            <p>Financial Aid & Scholarships</p>
-                        </a></li> <li> <a href="#">
-                            <p>Fee Structure</p>
-                        </a></li> <li> <a href="#">
-                            <p>Admission FAQ</p>
+                        <img src="./bell.png" class="img-fluid" alt="">
+                        <a href="#"> <h5>Important Alerts</h5> 
+                        <p class="text-black-50">Important alerts related to covid-19 shutdown</p>
                     </a>
-                    </li>
-                    </ul>
-                    </div>
-                    <div class="col-md-4">  <h3>Academics</h3>
-                        <ul class="list-unstyled">
-                        <li> <a href="#">
-                            <p>Departments</p>
-                        </a></li> <li> <a href="#">
-                            <p>Degrees & Programs</p>
-                        </a></li> <li> <a href="#">
-                            <p>Faculty</p>
-                        </a></li> <li> <a href="#">
-                            <p>Library</p>
-                    
-                        </li>
-                        </ul></div>
-        
-        
+                        </div>
+            
+            
+            
                     <div class="col-md-4">
-                        <h3 class="text-black-50">Research</h3>
-                        <ul class="list-unstyled">
-                        <li> <a href="#">
-                            <p>ORIC</p>
-                        </a></li> <li> <a href="#">
-                            <p>Research Centers/Labs</p>
-                        </a></li> <li> <a href="#">
-                            <p>Journal of space technology</p>
-                        </a></li> <li> <a href="#">
-                            <p>HEC journal recognition system (hjrs)</p>
-                    
-                        </li>
-                        </ul</div>
-        
-        
+                        <img src="./form.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <h5>Covid 19 report form</h5>
+                            <p class="text-black-50">Many students/employee is caught with corona virus, please fill this form</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4"><img src="./form.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <h5>Drugs Awareness Campaign</h5>
+                            <p class="text-black-50">Many students/employee is caught with corona virus, please fill this form</p>
+                        </a></div>
                 </div>
+            
             </div>
-        
+            </section>
 
-        
+            <footer>
+                <div class="container mt-5 ">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12">
+                            <a href="#">
+                                <img src="./Images/fv.png" class="img-fluid" alt="">
+                            </a> <a href="#">
+                                <img src="./Images/tw.png" class="img-fluid" alt="">
+                            </a> <a href="#">
+                                <img src="./Images/ins.png" class="img-fluid" alt="">
+                            </a> <a href="#">
+                                <img src="./Images/linkedin.png" class="img-fluid" alt="">
+                            </a>
+                        </a> <a href="#">
+                            <img src="./Images/youtube.png" class="img-fluid" alt="">
+                        </a>
+            
+                        </div>
+                    </div>
+                    <div class="row"></div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <img src="./ist.png" class="img-fluid" alt="">
+                    <h5>Istitue of space technology</h5>
+                    <h6>An ISO 9001:2015 Certfied institute</h6>
+                    <ul class="list-unstyled">
+                        <li> <img src="./ph.png" class="img-fluid" alt="">
+                        <h6> +92-51-9075100
+                        </h6> </li>
+                        <li> <img src="./tel.png" class="img-fluid" alt="">
+                            <h6>+92-51-9273310
+                            </h6> </li>
+                            <li> <img src="./mail.png" class="img-fluid" alt="">
+                                <h6> info@ist.edu.pk
+                                </h6> </li>
+            
+                                <li> <img src="./home.png" class="img-fluid" alt="">
+                                    <h6> 1, Islamabad Expressway, Islamabad
+                                    </h6> </li>
+            
+                                    <li> <img src="./loc.png" class="img-fluid" alt="">
+                                        <h6>  G59H+P2 Islamabad
+                                        </h6> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Admissions</h3>
+                        <ul class="list-unstyled">
+                            <li> <a href="#">
+                                <p>Why IST</p>
+                            </a></li> <li> <a href="#">
+                                <p>Undergraduate</p>
+                            </a></li> <li> <a href="#">
+                                <p>Graduate</p>
+                            </a></li> <li> <a href="#">
+                                <p>Financial Aid & Scholarships</p>
+                            </a></li> <li> <a href="#">
+                                <p>Fee Structure</p>
+                            </a></li> <li> <a href="#">
+                                <p>Admission FAQ</p>
+                        </a>
+                        </li>
+                        </ul>
+                        </div>
+                        <div class="col-md-4">  <h3>Academics</h3>
+                            <ul class="list-unstyled">
+                            <li> <a href="#">
+                                <p>Departments</p>
+                            </a></li> <li> <a href="#">
+                                <p>Degrees & Programs</p>
+                            </a></li> <li> <a href="#">
+                                <p>Faculty</p>
+                            </a></li> <li> <a href="#">
+                                <p>Library</p>
+                        
+                            </li>
+                            </ul></div>
+            
+            
+                        <div class="col-md-4">
+                            <h3 class="text-black-50">Research</h3>
+                            <ul class="list-unstyled">
+                            <li> <a href="#">
+                                <p>ORIC</p>
+                            </a></li> <li> <a href="#">
+                                <p>Research Centers/Labs</p>
+                            </a></li> <li> <a href="#">
+                                <p>Journal of space technology</p>
+                            </a></li> <li> <a href="#">
+                                <p>HEC journal recognition system (hjrs)</p>
+                        
+                            </li>
+                            </ul</div>
+            
+            
+                    </div>
+                </div>
+            
+
+            
+                </div>
+            
+            
             </div>
-        
-        
-        </div>
-        
-        </footer>
-        
-        <div class="subfooter my-5 align-self-center text-center ">
-            <p class="text-black-50 ">© 2023 Institute of Space Technology . All rights reserved.
-        
-            </p>
-        </div>
+            
+            </footer>
+            
+            <div class="subfooter my-5 align-self-center text-center ">
+                <p class="text-black-50 ">© 2023 Institute of Space Technology . All rights reserved.
+            
+                </p>
+            </div>
 
 
-        <script>
-            let currentIndex = 0;
-            const images = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // Replace with your image URLs
-            const imageElement = document.querySelector('.slider-image');
-            const textElement = document.querySelector('.slider-text');
-            const buttonElement = document.querySelector('.slider-button');
+            <script>
+                let currentIndex = 0;
+                const images = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // Replace with your image URLs
+                const imageElement = document.querySelector('.slider-image');
+                const textElement = document.querySelector('.slider-text');
+                const buttonElement = document.querySelector('.slider-button');
 
-            function updateSlider() {
-                imageElement.src = `assets/img/slides/${images[currentIndex]}`;
-                // Update text and button accordingly
-            }
+                function updateSlider() {
+                    imageElement.src = `assets/img/slides/${images[currentIndex]}`;
+                    // Update text and button accordingly
+                }
 
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % images.length;
-                updateSlider();
-            }
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateSlider();
+                }
 
-            function prevSlide() {
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-                updateSlider();
-            }
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateSlider();
+                }
 
-            // You can add event listeners or timing to control the slider here.
-        </script>
-    </body>
-    </html>
+                // You can add event listeners or timing to control the slider here.
+            </script>
+        </body>
+        </html>
